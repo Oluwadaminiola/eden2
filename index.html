@@ -8,15 +8,11 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- <link rel="shortcut icon" type="image/x-icon" href="img/icon.svg"> -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link href="//db.onlinewebfonts.com/c/bb018e64d01355748d8ddc53553850b9?family=Cerebri+Sans" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;900&display=swap"
         rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -30,8 +26,10 @@
                 <div class="col-lg-12 mb-4">
                     <div class="user px-3">
                         <div class="d-flex row align-items-center">
-                            <img src="img/user.svg" alt="">
-                            <p class="fs-16 ml-2 ff-p m-0">Good Morning Slim!</p>
+                            <a href="#" class="avatar">
+                                <img src="img/Group 2 (1).png" alt="">
+                            </a>
+                            <p class="fs-17 ml-2 ff-p m-0">Good Morning Slim!</p>
                         </div>
                     </div>
 
@@ -57,7 +55,7 @@
                             </div>
                             <div class="col-4">
                                 <div class="py-3 green">
-                                    <p class="m-0 text-white fs-12 ff-n text-center">N75,000</p>
+                                    <p class="m-0 text-white fs-12 ff-n text-center"><strike>N75,000</strike></p>
                                     <p class="m-0 text-white fs-12 ff-n text-center">Pay N62,000</p>
                                 </div>
                             </div>
@@ -94,14 +92,14 @@
                                     <div class="badge-orange">
                                         <div class="row">
                                             <div class="col-8">
-                                                <div class="p-3">
-                                                    <p class="m-0 fs-18 ff-p">Today's Meals</p>
+                                                <div class="py-4 px-4">
+                                                    <p class="m-0 fs-20 fw-6 ff-p">Today's Meals</p>
                                                 </div>
                                             </div>
                                             <div class="col-4">
-                                                <div class="p-3 orange-2"
+                                                <div class="p-4 orange-2"
                                                     onclick="document.querySelector('.meals').classList.remove('expand'); event.stopPropagation();">
-                                                    <p class="m-0 text-center text-white fs-24 ff-n">X</p>
+                                                    <p class="m-0 text-center"><img src="img/close.png" alt=""></p>
                                                 </div>
                                             </div>
                                         </div>
@@ -111,13 +109,13 @@
                                             <div class="col-lg-12 mb-3">
                                                 <div class="d-flex align-items-center food">
                                                     <a href="#img1">
-                                                        <img src="https://images.unsplash.com/photo-1506354666786-959d6d497f1a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+                                                        <img src="img/Group 5.png"
                                                             alt="">
                                                     </a>
                                                     <a href="#" class="lightbox" id="img1">
                                                         <div>
                                                             <img class="img-fluid"
-                                                                src="https://images.unsplash.com/photo-1506354666786-959d6d497f1a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80">
+                                                                src="img/Group 5.png">
 
                                                         </div>
                                                     </a>
@@ -130,43 +128,104 @@
                                             <div class="col-lg-12 mb-3">
                                                 <div class="d-flex align-items-center food">
                                                     <a href="#img2">
-                                                        <img src="https://images.unsplash.com/photo-1496116218417-1a781b1c416c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+                                                        <img src="img/Group 6.png"
                                                             alt="">
                                                     </a>
                                                     <a href="#" class="lightbox" id="img2">
                                                         <div>
                                                             <img class="img-fluid"
-                                                                src="https://images.unsplash.com/photo-1496116218417-1a781b1c416c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80">
+                                                                src="img/Group 6.png">
 
                                                         </div>
                                                     </a>
-                                                    
+
                                                     <div class="ml-2">
-                                                        <p class="fs-14 ff-n m-0">Akara & Pap</p>
-                                                        <small class="fs-12 ff-n fc-gy">Carbohydrate</small>
+                                                        <p class="fs-14 ff-n m-0">Jollof Rice</p>
+                                                        <small class="fs-12 ff-n fc-gy">Protein</small>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-lg-12 mb-3">
                                                 <div class="d-flex align-items-center food">
                                                     <a href="#img3">
-                                                        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1804&q=80"
+                                                        <img src="img/Group 7.png"
                                                             alt="">
                                                     </a>
                                                     <a href="#" class="lightbox" id="img3">
                                                         <div>
                                                             <img class="img-fluid"
-                                                                src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1804&q=80">
+                                                                src="img/Group 7.png">
 
                                                         </div>
                                                     </a>
 
                                                     <div class="ml-2">
-                                                        <p class="fs-14 ff-n m-0">Akara & Pap</p>
+                                                        <p class="fs-14 ff-n m-0">Gastonton</p>
                                                         <small class="fs-12 ff-n fc-gy">Carbohydrate</small>
                                                     </div>
                                                 </div>
                                             </div>
+                                            <div class="col-lg-12 mb-3">
+                                                <div class="d-flex align-items-center food">
+                                                    <a href="#img4">
+                                                        <img src="img/Group 8.png"
+                                                            alt="">
+                                                    </a>
+                                                    <a href="#" class="lightbox" id="img4">
+                                                        <div>
+                                                            <img class="img-fluid"
+                                                                src="img/Group 8.png">
+
+                                                        </div>
+                                                    </a>
+
+                                                    <div class="ml-2">
+                                                        <p class="fs-14 ff-n m-0">Port Domenic</p>
+                                                        <small class="fs-12 ff-n fc-gy">Carbohydrate</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12 mb-3">
+                                                <div class="d-flex align-items-center food">
+                                                    <a href="#img5">
+                                                        <img src="img/Group 9.png"
+                                                            alt="">
+                                                    </a>
+                                                    <a href="#" class="lightbox" id="img5">
+                                                        <div>
+                                                            <img class="img-fluid"
+                                                                src="img/Group 9.png">
+
+                                                        </div>
+                                                    </a>
+
+                                                    <div class="ml-2">
+                                                        <p class="fs-14 ff-n m-0">Carleeville</p>
+                                                        <small class="fs-12 ff-n fc-gy">Fat & Oils</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12 mb-3">
+                                                <div class="d-flex align-items-center food">
+                                                    <a href="#img6">
+                                                        <img src="img/Group 10.png"
+                                                            alt="">
+                                                    </a>
+                                                    <a href="#" class="lightbox" id="img6">
+                                                        <div>
+                                                            <img class="img-fluid"
+                                                                src="img/Group 10.png">
+
+                                                        </div>
+                                                    </a>
+
+                                                    <div class="ml-2">
+                                                        <p class="fs-14 ff-n m-0">South Chesleyton</p>
+                                                        <small class="fs-12 ff-n fc-gy">Vegetable</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
                                         </div>
                                     </div>
                                 </div>
@@ -186,7 +245,7 @@
                             </div>
                             <div class="col-6">
                                 <div class="px-2">
-                                    <div class="round purple"><i class="fas fa-phone-alt"></i></div>
+                                    <div class="round purple mb-2"><i class="fas fa-phone-alt"></i></div>
                                     <p class="fs-12 ff-n">Set up a call with your gardener</p>
                                     <a href="#" class="fs-12 ff-n fc-p"><span class="tx-u mr-2">Do it</span> <span><i
                                                 class="fas fa-long-arrow-alt-right"></i></span></a>
@@ -194,7 +253,7 @@
                             </div>
                             <div class="col-6">
                                 <div class="px-2">
-                                    <div class="round orange"><i class="fas fa-play"></i></div>
+                                    <div class="round orange mb-2"><i class="fas fa-play"></i></div>
                                     <p class="fs-12 ff-n pr-3">Lose yourself to this video</p>
                                     <a href="#" class="fs-12 ff-n fc-o"><span class="tx-u mr-2">Do it</span> <span><i
                                                 class="fas fa-long-arrow-alt-right"></i></span></a>
@@ -262,40 +321,49 @@
 
     </div>
     <div class="bottom-nav py-3">
-        <div class="d-flex justify-content-around">
-            <div>
-                <p class="text-center m-0">
-                    <i class="far fa-calendar"></i>
-                </p>
-                <p class="text-center m-0 fs-12 ff-n">
-                    Schedule
-                </p>
-            </div>
-            <div>
-                <p class="text-center m-0">
-                    <i class="far fa-calendar"></i>
-                </p>
-                <p class="text-center m-0 fs-12 ff-n">
-                    Schedule
-                </p>
-            </div>
-            <div>
-                <p class="text-center m-0">
-                    <i class="far fa-calendar"></i>
-                </p>
-                <p class="text-center m-0 fs-12 ff-n">
-                    Schedule
-                </p>
-            </div>
-            <div>
-                <p class="text-center m-0">
-                    <i class="far fa-calendar"></i>
-                </p>
-                <p class="text-center m-0 fs-12 ff-n">
-                    Schedule
-                </p>
-            </div>
-        </div>
+        <ul class="nav justify-content-around">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">
+                    <p class="text-center m-0">
+                        <img src="img/Shape.png" alt="">
+                    </p>
+                    <p class="text-center m-0 fs-12 ff-n">
+                        Schedule
+                    </p>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <p class="text-center m-0">
+                        <img src="img/history.png" alt="">
+                    </p>
+                    <p class="text-center m-0 fs-12 ff-n">
+                        History
+                    </p>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <p class="text-center m-0">
+                        <img src="img/Shape (1).png" alt="">
+                    </p>
+                    <p class="text-center m-0 fs-12 ff-n">
+                        Notifications
+                    </p>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <p class="text-center m-0">
+                        <img src="img/Shape (2).png" alt="">
+                    </p>
+                    <p class="text-center m-0 fs-12 ff-n">
+                        Chat
+                    </p>
+                </a>
+            </li>
+        </ul>
+        
     </div>
 
 

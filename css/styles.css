@@ -9,46 +9,56 @@
     position: fixed;
     bottom: 0;
     width: 100%;
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(244, 244, 244, 0.75);
+}
+
+.bottom-nav a.nav-link {
+    color: #303030;
 }
 
 .badge-green {
-    background: rgb(224, 249, 236);
+    background: rgba(0, 194, 103, 0.1);
     /* background: rgb(0, 194, 103); */
-    border-radius: 7px;
+    border-radius: 6px;
 }
 
 .badge-orange {
-    background: rgb(249, 245, 225);
-    border-radius: 7px;
+    background: #F9F5E1;
+    border-radius: 6px;
 }
 
 .orange-2 {
-    border-top-right-radius: 7px;
-    border-bottom-right-radius: 7px;
-    background: rgb(255, 190, 86);
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    background: #FFBE56;
 }
 
 .green {
-    background: rgb(0, 194, 103);
-    border-top-right-radius: 7px;
-    border-bottom-right-radius: 7px;
+    background: #00C267;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
 }
 
 .purple {
-    background: rgb(198, 185, 251);
+    background: rgba(190, 164, 255, 0.7);
 }
 
 .orange {
-    background: rgb(245, 173, 144);
+    background: rgba(255, 146, 101, 0.7);
 }
 
 .getStarted {
-    background: rgb(228, 245, 253);
+    background: rgba(207, 236, 255, 0.5);
 }
 
-.user img {
-    max-height: 54px;
+.avatar {
+    height: 35px;
+    border-radius: 100%;
+    width: 35px;
+}
+
+.avatar img {
+    height: 35px;
 }
 
 .food img {
@@ -65,17 +75,24 @@
     justify-content: center;
     align-items: center;
     color: rgb(255, 255, 255);
-    text-shadow: 2px 2px rgb(0, 0, 0)
+    text-shadow: 2px 2px rgb(0, 0, 0);
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
 }
 
 .btn-reconfigure {
-    color: rgb(255, 190, 86);
-    border: 1px solid rgb(255, 190, 86);
-    background: rgb(249, 245, 225);
+    color: #E78F00;
+    border: 1px solid #FF9D00;
+    background: rgba(255, 157, 0, 0.05);
     font-family: 'Nunito', sans-serif;
     font-size: 12px;
-    height: 30px;
+    height: 25px;
     border-radius: 30px;
+}
+
+.btn {
+    padding: unset;
+    padding-left: .75rem;
+    padding-right: .75rem;
 }
 
 .tx-u {
@@ -83,23 +100,28 @@
 }
 
 .ff-n {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Cerebri Sans'
 }
 
 .ff-p {
-    font-family: 'Playfair Display', serif;
+    font-family: 'PT Serif', serif;
 }
 
 .fc-p {
-    color: rgb(198, 185, 251);
+    color: #8A5CFF;
+    ;
 }
 
 .fc-o {
-    color: rgb(245, 173, 144);
+    color: #FF682A;
 }
 
 .fc-g {
-    color: rgb(0, 194, 103);
+    color: #00C267;
+}
+
+.fc-dk {
+    color: #000;
 }
 
 .fw-6 {
@@ -126,8 +148,17 @@
     font-size: 16px;
 }
 
+.fs-17 {
+    font-size: 17px;
+}
+
 .fs-18 {
     font-size: 18px;
+}
+
+.fs-20 {
+    font-size: 20px;
+    line-height: 26px;
 }
 
 .fs-24 {
@@ -173,37 +204,36 @@
     height: 0;
     background: #fff;
     transition-property: height;
-	/* transition-duration: 1s; */
-	perspective: 1000px;
-	transform-style: preserve-3d;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
+    transform-style: preserve-3d;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
     transition: all 1s cubic-bezier(0.4, 0.0, 1, 1);
 }
 
 .inner2 .badge-orange {
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
 }
 
 .inner2 .orange-2 {
     border-bottom-right-radius: 0px;
-    border-top-right-radius: 25px;
+    border-top-right-radius: 20px;
 }
 
 .to-contents {
-    transform: scale(.55);
+    transform: scale(0);
+    height: 0;
     transform-origin: top center;
-    transition: transform .3s cubic-bezier(0.4, 0.0, 0.2, 1);
+    transition: all 1s cubic-bezier(0.4, 0.0, 0.2, 1);
 }
 
 .meals.expand {
     padding-top: 15vh;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.9);
     height: 100vh;
     width: 100vw;
     position: fixed;
@@ -224,14 +254,15 @@
 .expand .to {
     opacity: 1;
     height: 85vh;
-    
     transition: all 1s cubic-bezier(0.0, 0.0, 0.2, 1);
 }
 
 .expand .to-contents {
+    height: calc(85vh - 75px);
     transform: scale(1);
-    transform: rotateX(0deg); 
-	height: 111px; 
+    transform: rotateX(0deg);
+    transition: all 1s cubic-bezier(0.0, 0.0, 0.2, 1);
+    /* height: 111px;  */
 }
 
 .lightbox {
@@ -251,7 +282,8 @@
     transition: all .5s ease-in-out !important;
     overflow: hidden;
 }
-.lightbox div{
+
+.lightbox div {
     /* width: 90vw; */
     max-width: 414px;
     height: 40vh;
@@ -277,8 +309,28 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
     top: 0;
     bottom: 0;
 }
 
+/* @keyframes opening {
+    0% {
+        transform: scale(1, 0);
+    }
+    20% {
+        transform: scale(1, 0.2);
+        opacity: 1;
+    }
+    40% {
+        transform: scale(1, 0.4);
+        opacity: 1;
+    }
+    80% {
+        transform: scale(1, 0.8);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1, 1);
+        opacity: 1;
+    }
+} */
